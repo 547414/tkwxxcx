@@ -1,2 +1,2 @@
-# tkwxxcx
-一个自制的题库微信小程序
+#说明
+##在project.config.json中修改你的APPID
