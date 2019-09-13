@@ -1,0 +1,21 @@
+<!--pages/jds/jds.wxml-->
+<view>近代史题库(2019年1月份的版本)</view>
+<button bindtap="jdsclickButton1" style='height: 50px;margin-top: 5px'>
+  <image src='/images/jds2.png' style='width:32px;height:32px;position: fixed;margin-top: 7px;left: 0%'></image>
+  <view style='position: fixed;left: 36px'>按顺序出题</view>
+  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
+</button>
+
+<button bindtap="jdsclickButton2" style='height: 50px;margin-top: 50px'>
+  <image src='/images/jds2.png' style='width:32px;height:32px;position: fixed;margin-top: 7px;left: 0%'></image>
+  <view style='position: fixed;left: 36px'>随机出题</view>
+  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
+</button>
+
+<button bindtap="jdsclickButton4" style='height: 50px;margin-top: 50px'>
+  <image src='/images/jds2.png' style='width:32px;height:32px;position: fixed;margin-top: 7px;left: 0%'></image>
+  <view style='position: fixed;left: 36px'>错题库</view>
+  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
+</button>
+
+<ad style='position: fixed;bottom: 10px' unit-id="adunit-6f791ce02c29b6ba"></ad>

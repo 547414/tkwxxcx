@@ -1,0 +1,13 @@
+<!--pages/index5/index5.wxml-->
+<view>---------- </view>
+<view class="img">
+  <image class="image_frame" src="/images/ssk.png" style='width:764rpx;height:110rpx'>
+  </image>
+</view>
+<view>---------- </view>
+<view>小程序码(长按保存)</view>
+<view class="img" catchlongpress='baocunzhddktk'>
+  <image class="image_frame" src="/images/zhddktk.png" style='width:150px;height:150px'>
+  </image>
+</view>
+<view>---------- </view>

@@ -1,0 +1,9 @@
+<!--pages/index4/index4.wxml-->
+<button bindtap="index4clickButton1" style='text-align: left;height: 50px;width: 100%;position: fixed;margin-top: 5px;margin-left: 0%'>文字版技术文档  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image></button>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>---------- </view>
+<text>本小程序工程文件(长按复制链接)：</text>
+<text selectable="true" style='word-break: keep-all;word-wrap: break-word;color:#FFA500;'>https://pan.baidu.com/s/1_3Y-jfmiCKPgAkXZQ9f9Cw</text>
+<view>---------- </view>

@@ -1,0 +1,85 @@
+<!--pages/sx1/sx1.wxml-->
+<view>
+  <text>--</text>
+  <text style='color: #FFB6C1'>{{ts}}</text>
+  <text>/</text>
+  <text style='color: green'>{{ddts}}</text>
+  <text>/</text>
+  <text>{{zts}}</text>
+  <text>--{{tx}}</text>
+</view>
+<view>----------</view>
+<!--selectable:设置文本是否可选-->
+<view>
+  <text selectable="true">{{tm}}</text>
+</view>
+<view>----------</view>
+<view bindtap="sx1clickxxa" style='background-color: #AFEEEE'>
+  <text style='color:{{sx1ysxxa}}' selectable="true">{{xxa}}</text>
+</view>
+<view>-</view>
+<view bindtap="sx1clickxxb" style='background-color: #FFE4E1'>
+  <text style='color:{{sx1ysxxb}}' selectable="true">{{xxb}}</text>
+</view>
+<view>-</view>
+<view bindtap="sx1clickxxc"  style='background-color: #AFEEEE'>
+  <text style='color:{{sx1ysxxc}}' selectable="true">{{xxc}}</text>
+</view>
+<view>-</view>
+<view bindtap="sx1clickxxd" style='background-color: #FFE4E1'>
+  <text style='color:{{sx1ysxxd}}' selectable="true">{{xxd}}</text>
+</view>
+<view>-</view>
+<view bindtap="sx1clickxxe"  style='background-color: #AFEEEE'>
+  <text style='color:{{sx1ysxxe}}' selectable="true">{{xxe}}</text>
+</view>
+<view>-
+  <text style='color:{{dapdys}}'>{{dapd}}</text>
+</view>
+<view>-
+  <text>{{daxs}}</text>
+</view>
+<view>-
+  <text style='color: #FF0000'>{{dsxs}}</text>
+</view>
+<progress percent="{{jdt}}" stroke-width="{{jdtwidth}}" color="pink" show-info="{{jdtinfo}}" color="pink" />
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+<view>-</view>
+
+<!--功能按钮-->
+<button bindtap="sx1clickButton1" style='height:50px;width:30%;position: fixed;bottom:70px;margin-left: 0%'>上一题</button>
+<button bindtap="sx1clickButton2" style='height:50px;width:40%;position: fixed;bottom:70px;margin-left: 30%'>核对答案</button>
+<button bindtap="sx1clickButton3" style='height:50px;width:30%;position: fixed;bottom:70px;margin-left: 70%'>下一题</button>
+
+<button bindtap="sx1clickButton4" style='height:50px;width:20%;position: fixed;bottom: 10px;margin-left: 0%'>重置</button>
+<button bindtap="sx1clickButton5" style='height:50px;width:37%;position: fixed;bottom: 10px;margin-left: 20%'>加入错题库</button>
+<input bindinput="sx1tzth" placeholder="跳转题号" placeholder-style="color: gray" style='background-color: #FFF0F5;height:30px;width:20%;position: fixed;bottom: 20px;margin-left: 59%' type="number" bindblur='no_focus' bindfocus="focus" />
+<button bindtap="sx1clickButton6" style='height:50px;width:20%;position: fixed;bottom: 10px;margin-left: 80%'>跳转</button>

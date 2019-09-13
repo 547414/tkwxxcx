@@ -1,0 +1,21 @@
+<!--pages/index6/index6.wxml-->
+<view>---------- </view>
+<view>个人网站：没钱买服务器啊！！</view>
+<view>---------- </view>
+<view>开发者 邮箱(长按复制)：</view>
+<text selectable="true" style='word-break: keep-all;word-wrap: break-word;color:#FFA500;'>zbshr@foxmail.com</text>
+<view>---------- </view>
+<view>赞助开发者(长按保存二维码) </view>
+<view>---------- </view>
+<view>微信支付</view>
+<view class="img" catchlongpress='baocunwx'>
+  <image class="image_frame" src="/images/wx.png" style='width:100px;height:100px'>
+  </image>
+</view>
+<view>---------- </view>
+<view>支付宝 </view>
+<view class="img" catchlongpress='baocunzfb'>
+  <image class="image_frame" src="/images/zfb.png" style='width:100px;height:100px'>
+  </image>
+</view>
+<view>---------- </view>
