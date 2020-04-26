@@ -1,0 +1,62 @@
+/* pages/jmsz/jmsz.wxss */
+.main{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hr1 {/*分割线*/
+  position: absolute;
+  background: rgb(214, 220, 220);
+  width: 96%;
+  height: 5rpx;
+  top:100rpx;
+  margin-left: 2%
+}
+.hr2 {/*分割线*/
+  position: absolute;
+  background: rgb(214, 220, 220);
+  width: 96%;
+  height: 5rpx;
+  top:200rpx;
+  margin-left: 2%
+}
+.hr3 {/*分割线*/
+  position: absolute;
+  background: rgb(214, 220, 220);
+  width: 96%;
+  height: 5rpx;
+  top:300rpx;
+  margin-left: 2%
+}
+.hr4 {/*分割线*/
+  position: absolute;
+  background: rgb(214, 220, 220);
+  width: 96%;
+  height: 5rpx;
+  top:400rpx;
+  margin-left: 2%
+}
+.switch_btn1{
+  position: absolute;
+  top:10rpx;
+  width: 100vw;
+}
+.switch_btn2{
+  position: absolute;
+  top:110rpx;
+  width: 100vw;
+}
+.switch_btn3{
+  position: absolute;
+  top:210rpx;
+  width: 100vw;
+}
+.switch_btn4{
+  position: absolute;
+  top:310rpx;
+  width: 100vw;
+}
+.img_dyh_btn{
+  position: absolute;
+  margin-top:450rpx;
+}

@@ -1,29 +1,35 @@
 <!--index.wxml-->
-<button bindtap="indexclickButton1" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 10px;margin-left: 0%'>删除所有缓存</button>
-<button bindtap="indexclickButton2" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 10px;margin-left: 50%'>缓存占用大小</button>
-
-<button bindtap="indexclickButton3" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 65px;margin-left: 0%'>详细说明
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 50%'></image>
-</button>
-
-<button bindtap="indexclickButton4" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 65px;margin-left: 50%'>技术文档
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
-</button>
-
-<button bindtap="indexclickButton5" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 120px;margin-left: 0%'>分享和转发
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 50%'></image>
-</button>
-<button bindtap="indexclickButton6" style='text-align: left;height: 50px;width: 50%;position: fixed;margin-top: 120px;margin-left: 50%'>关于开发者
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
-</button>
-
-<button bindtap="indexclickButton7" style='text-align: left;height: 50px;width: 100%;position: fixed;margin-top: 175px;margin-left: 0%'>授权情况
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
-</button>
-
-<button open-type="contact" bindtap="indexclickButton8" style='text-align: left;height: 50px;width: 100%;position: fixed;margin-top: 230px;margin-left: 0%'>反馈/客服
-  <image src='/images/jty.png' style='width:16px;height:16px;position: fixed;margin-top: 17px;right: 0%'></image>
-</button>
-
-
-<ad style='position: fixed;bottom: 10px' unit-id="adunit-84d428fc79d66c2b"></ad>
+<view>
+	<view class='btn1'>
+		<button bindtap="indexclickButton1" hover-class="anniu-hover">删除所有缓存</button>
+	</view>
+	<view class='btn2'>
+		<button bindtap="indexclickButton2" hover-class="anniu-hover">缓存占用大小</button>
+	</view>
+	<view class='btn3'>
+		<button bindtap="indexclickButton3" hover-class="anniu-hover">功能设置
+			<image src='/images/jty.png' class='btnbj2'></image>
+		</button>
+	</view>
+	<view class='btn6'>
+		<button bindtap="indexclickButton6" hover-class="anniu-hover">关于/帮助
+			<image src='/images/jty.png' class='btnbj'></image>
+		</button>
+	</view>
+	<view class='btn7'>
+		<button bindtap="indexclickButton7" hover-class="anniu-hover">授权情况
+			<image src='/images/jty.png' class='btnbj'></image>
+		</button>
+	</view>
+	<view class='btn8'>
+		<button open-type="contact" bindtap="indexclickButton8" hover-class="anniu-hover">反馈/客服
+			<image src='/images/jty.png' class='btnbj'></image>
+		</button>
+	</view>
+	<view class="message">
+		<text>{{message}}</text>
+	</view>
+</view>
+<view>
+	<ad style='position: fixed;bottom: 10px;z-index: 999999' unit-id="adunit-84d428fc79d66c2b"></ad>
+</view>

@@ -1,0 +1,125 @@
+/* pages/zds/zds.wxss */
+.btn {/*按钮*/
+  height: 50px;
+  background-color: green;
+  opacity: 0.7;
+  border-radius: 10px;
+  color: white;
+}
+.zds_btn_hover {/*单击动画*/
+  background-color: #87ceeb;
+  color: black;
+  opacity: 1.0;
+}
+.zds_arr_left {/*箭头-左*/
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  position: fixed;
+  margin-top: 17px;
+  left: 45%;
+}
+.zds_arr_right {/*箭头-右*/
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+  position: fixed;
+  margin-top: 17px;
+  right: 0%;
+}
+.zds_btn_jds_sx{/*近代史-顺序-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 0%;
+}
+.zds_btn_jds_sj{/*近代史-随机-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 50%;
+}
+.zds_btn_sx_sx{/*思修-顺序-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 65px;
+  margin-left: 0%;
+}
+.zds_btn_sx_sj{/*思修-随机-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 65px;
+  margin-left: 50%;
+}
+.zds_btn_my_sx{/*马原-顺序-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 0%;
+}
+.zds_btn_my_sj{/*马原-随机-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 50%;
+}
+.zds_btn_mg_sx{/*毛概-顺序-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 175px;
+  margin-left: 0%;
+}
+.zds_btn_mg_sj{/*毛概-随机-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 175px;
+  margin-left: 50%;
+}
+.zds_btn_jds_ctk{/*近代史-错题库-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 230px;
+  margin-left: 0%;
+}
+.zds_btn_sx_ctk{/*思修-错题库-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 230px;
+  margin-left: 50%;
+}
+.zds_btn_my_ctk{/*马原-错题库-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 285px;
+  margin-left: 0%;
+}
+.zds_btn_mg_ctk{/*毛概-错题库-按钮*/
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 285px;
+  margin-left: 50%;
+}

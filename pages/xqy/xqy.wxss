@@ -1,0 +1,142 @@
+/* pages/xqy/xqy.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  /*页面滚动*/
+  overflow: scroll;
+}
+
+.main {
+  /*页面容器主样式*/
+  word-break: break-all;
+  /*自动换行*/
+  height: 100%;
+  width: 100%;
+}
+
+.xqy_tkh {
+  /*题库号*/
+  background-color: #FFE4E1;
+}
+
+.xqy_tx {
+  /*题型*/
+  background-color: #AFEEEE;
+}
+
+.xqy_ddl {
+  /*答对量*/
+  background-color: #FFE4E1;
+}
+
+.xqy_ztl {
+  /*总题量*/
+  background-color: #AFEEEE;
+}
+
+.xqy_dbcd {
+  /*顶部菜单-总样式*/
+  box-shadow: 0rpx 1rpx 7rpx 9rpx rgba(0, 0, 0, 0.5)
+}
+
+.xqy_dbcd_sec {
+  /*顶部菜单-第二行*/
+  position: relative;
+}
+
+.xqy_ipt {
+  /*输入框*/
+  position: absolute;
+  left: 75%;
+  width: 24%;
+  height: 100%;
+  background-color: rgba(232, 143, 143, 0.5);
+}
+.tmxs_1 {
+  /*用于题目选项显示底部颜色*/
+  background-color: #FFE4E1;
+}
+
+.tmxs_2 {
+  /*用于题目选项显示底部颜色*/
+  background-color: #AFEEEE;
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.xqy_hr {
+  background: rgb(87, 200, 213);
+  width: 100%;
+  height: 8rpx;
+}
+
+/*分割线样式2*/
+.xqy_hr2 {
+  background:rgb(242, 235, 235);
+  width: 100%;
+  height: 30rpx;
+}
+
+/*按钮-上一题*/
+.btn_syt {
+  position: absolute;
+  margin-top: 10px;
+  width: 30vw;
+  height: 50px;
+}
+
+/*按钮-下一题*/
+.btn_xyt {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 70vw;
+  width: 30vw;
+  height: 50px;
+}
+/*按钮-核对答案*/
+.btn_hdda {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30vw;
+  width: 40vw;
+  height: 50px;
+}
+/*按钮-重置*/
+.btn_cz {
+  position: absolute;
+  margin-top: 70px;
+  width: 20vw;
+  height: 50px;
+}
+/*按钮-错题*/
+.btn_ct {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 20vw;
+  width: 20vw;
+  height: 50px;
+}
+/*按钮-清空*/
+.btn_qk {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 40vw;
+  width: 20vw;
+  height: 50px;
+}
+/*按钮-打散*/
+.btn_ds {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 60vw;
+  width: 20vw;
+  height: 50px;
+}
+/*按钮-跳转*/
+.btn_tz {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 80vw;
+  width: 20vw;
+  height: 50px;
+}

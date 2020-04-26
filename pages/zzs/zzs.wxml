@@ -1,0 +1,32 @@
+<!--pages/zzs/zzs.wxml-->
+<view>
+	<view class='zzs_btn_zdy_sx'>
+		<button disabled="{{disabl_ed}}" class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_sx">自定义-顺序
+			<image src='/images/jty.png' class='zzs_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zzs_btn_zdy_sj'>
+		<button disabled="{{disabl_ed}}" class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_sj">自定义-随机
+			<image src='/images/jty.png' class='zzs_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zzs_btn_zdy_ctk'>
+		<button disabled="{{disabl_ed}}" class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_ctk">自定义-错题库
+			<image src='/images/jty.png' class='zzs_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zzs_btn_zdy_dr'>
+		<button class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_dr">导入自定义题库
+		</button>
+	</view>
+
+	<input class="input" type="number" placeholder="请输入导入ID" placeholder-style="color: gray" bindinput="dr"></input>
+	<text selectable='true' class="text">小程序端不太适合导入题库，
+	请访问https://crysu.com/zhddktk/辅助操作，将获取的导入ID填入上方输入框，点“导入自定义题库”完成导入。
+	</text>
+
+</view>
+

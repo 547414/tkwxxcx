@@ -1,1 +1,12 @@
 /* pages/index6/index6.wxss */
+.img{/*水平居中*/
+  display:flex;
+  justify-content: center;
+}
+.hr {/*分割线*/
+  position: absolute;
+  background: rgb(214, 220, 220);
+  width: 96%;
+  height: 5rpx;
+  margin-left: 2%
+}
