@@ -1,0 +1,23 @@
+<!--pages/jmsz/jmsz.wxml-->
+<view class="main">
+	<view class="switch_btn1">第一行按钮({{text_first_btn}})
+		<switch style="position:absolute;right:0%" checked="{{first_btn}}" bindchange="switch_first_btn" />
+	</view>
+	<view class="hr1"></view>
+	<view class="switch_btn2">第二行按钮({{text_sec_btn}})
+		<switch style="position:absolute;right:0%" checked="{{sec_btn}}" bindchange="switch_sec_btn" />
+	</view>
+	<view class="hr2"></view>
+	<view class="switch_btn3">菜单栏按钮功能({{text_cdl_btn}})
+		<switch style="position:absolute;right:0%" checked="{{cdl_btn}}" bindchange="switch_cdl_btn" />
+	</view>
+	<view class="hr3"></view>
+	<view class="switch_btn4">左右划动功能({{text_rl_btn}})
+		<switch style="position:absolute;right:0%" checked="{{rl_btn}}" bindchange="switch_rl_btn" />
+	</view>
+	<view class="hr4"></view>
+	<view class="img_dyh_btn">
+		<image style="width:100vw" mode="aspectFit" src="/images/sz.png"></image>
+	</view>
+	<view style="position:fixed;bottom:5px">注：菜单栏功能按钮包括点击题目核对答案的功能</view>
+</view>

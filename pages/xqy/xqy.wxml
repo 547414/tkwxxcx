@@ -1,0 +1,71 @@
+<!--pages/xqy/xqy.wxml-->
+<view style="overflow: scroll;height:100%">
+	<view class="main" bindtouchstart='touchStart' bindtouchend="touchEnd">
+		<view class="xqy_dbcd">
+			<view>
+				<text class="xqy_dqh" bindtap="btn_cz">当前号:{{dqh}}</text>
+				<text class="xqy_hr2">|</text>
+				<text class="xqy_tkh" bindtap="btn_ds">题库号:{{tkh}}</text>
+				<text class="xqy_hr2">|</text>
+				<text class="xqy_tx" bindtap="btn_qk">{{tx}}</text>
+			</view>
+			<view class="xqy_hr"></view>
+			<view class="xqy_dbcd_sec">
+				<input class="xqy_ipt" type="number" placeholder="输入题号" placeholder-style="color: gray" bindinput="tzth"></input>
+				<text class="xqy_ddl" bindtap="btn_ct">答对量:{{ddl}}</text>
+				<text class="xqy_hr2">|</text>
+				<text class="xqy_ztl" bindtap="btn_tz">总题量:{{ztl}}</text>
+			</view>
+		</view>
+		<scroll-view style="height:100%" scroll-y="true">
+			<view>
+				<view bindtap="btn_hdda"><text>{{tm}}</text></view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_1" bindtap="click_xa">
+					<text style='color:{{color_xa}}' selectable="true">{{xa}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_2" bindtap="click_xb">
+					<text style='color:{{color_xb}}' selectable="true">{{xb}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_1" bindtap="click_xc">
+					<text style='color:{{color_xc}}' selectable="true">{{xc}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_2" bindtap="click_xd">
+					<text style='color:{{color_xd}}' selectable="true">{{xd}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_1" bindtap="click_xe">
+					<text style='color:{{color_xe}}' selectable="true">{{xe}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_2" bindtap="click_xf">
+					<text style='color:{{color_xf}}' selectable="true">{{xf}}</text>
+				</view>
+				<view class="xqy_hr2"></view>
+				<view class="tmxs_1" bindtap="click_xg">
+					<text style='color:{{color_xg}}' selectable="true">{{xg}}</text>
+				</view>
+				<view><text style="color:{{dapd_color}}">{{dapd}}</text></view>
+				<view>{{zqda}}</view>
+				<view style="display:{{sz_dyh}}">
+					<view class="btn_syt"><button bindtap="btn_syt">上一题</button></view>
+					<view class="btn_hdda"><button bindtap="dapd">核对答案</button></view>
+					<view class="btn_xyt"><button bindtap="btn_xyt">下一题</button></view>
+				</view>
+				<view style="display:{{sz_deh}}">
+					<view class="btn_cz"><button bindtap="cz">重置</button></view>
+					<view class="btn_ct"><button bindtap="jrctk">错题</button></view>
+					<view class="btn_qk"><button bindtap="qk">清空</button></view>
+					<view class="btn_ds"><button bindtap="ds_btn">打散</button></view>
+					<view class="btn_tz"><button bindtap="tz">跳转</button></view>
+				</view>
+			</view>
+		
+		</scroll-view>
+
+	</view>
+
+</view>

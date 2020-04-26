@@ -1,26 +1,75 @@
 //index.js
 //获取应用实例
 const app = getApp()
+
 Page({
   data: {
-
+    cwts: '',
+    jdt: 0,
+    dis_play: "flex",
+    message: "",
   },
 
   //删除所有本地缓存
-  indexclickButton1: function() {
+  indexclickButton1: function () {
     var that = this;
     wx.showModal({
       title: '提示',
       content: '确定要删除所有缓存吗(数据无价，删除需谨慎！)？',
-      success: function(res) {
+      success: function (res) {
         if (res.confirm) { //用户点击确定     
-          wx.clearStorage();
-          app.globalData.jds1count3 = 0,
-            app.globalData.jds1count2 = 0,
-            app.globalData.jds1count = 1,
-            app.globalData.jds4count3 = 0,
-            app.globalData.jds4count2 = 0,
-            app.globalData.jds4count = 1
+          var temp_d_jds = wx.getStorageSync('d_jds')
+          var temp_d_sx = wx.getStorageSync('d_sx')
+          var temp_d_my = wx.getStorageSync('d_my')
+          var temp_d_mg = wx.getStorageSync('d_mg')
+          var temp_sz_dyh_btn = wx.getStorageSync('sz_dyh_btn')
+          var temp_sz_sec_btn = wx.getStorageSync('sz_sec_btn')
+          var temp_sz_cdl_btn = wx.getStorageSync('sz_cdl_btn')
+          var temp_sz_rl_btn = wx.getStorageSync('sz_rl_btn')
+          var temp_version=wx.getStorageSync('version')//版本号，用来检测是否需要升级
+          var temp_up_data
+          wx.getStorage({
+            key:"up_data",
+            success:function(res){
+              temp_up_data=res.data
+            }
+          })
+          wx.getStorage({
+            key: 'd_zdy',
+            success: function (res2) {
+              wx.clearStorage();
+              wx.setStorageSync('d_jds', temp_d_jds)
+              wx.setStorageSync('d_sx', temp_d_sx)
+              wx.setStorageSync('d_my', temp_d_my)
+              wx.setStorageSync('d_mg', temp_d_mg)
+              wx.setStorageSync('sz_dyh_btn', temp_sz_dyh_btn)
+              wx.setStorageSync('sz_sec_btn', temp_sz_sec_btn)
+              wx.setStorageSync('sz_cdl_btn', temp_sz_cdl_btn)
+              wx.setStorageSync('sz_rl_btn', temp_sz_rl_btn)
+              wx.setStorageSync('d_zdy', res2.data)
+              wx.setStorageSync('version', temp_version)
+              wx.setStorage({
+                data: temp_up_data,
+                key: 'up_data',
+              })
+            },
+            fail: function () {
+              wx.clearStorage();
+              wx.setStorageSync('d_jds', temp_d_jds)
+              wx.setStorageSync('d_sx', temp_d_sx)
+              wx.setStorageSync('d_my', temp_d_my)
+              wx.setStorageSync('d_mg', temp_d_mg)
+              wx.setStorageSync('sz_dyh_btn', temp_sz_dyh_btn)
+              wx.setStorageSync('sz_sec_btn', temp_sz_sec_btn)
+              wx.setStorageSync('sz_cdl_btn', temp_sz_cdl_btn)
+              wx.setStorageSync('sz_rl_btn', temp_sz_rl_btn)
+              wx.setStorageSync('version', temp_version)
+              wx.setStorage({
+                data: temp_up_data,
+                key: 'up_data',
+              })
+            }
+          })
           wx.showToast({
             title: '删除成功！',
             icon: 'success',
@@ -36,26 +85,16 @@ Page({
       }
     })
   },
-  //详细说明
-  indexclickButton3:function(){
+  //功能设置
+  indexclickButton3: function () {
     wx.navigateTo({
-      url: '/pages/index3/index3'
+      url: '/pages/jmsz/jmsz'
     })
   },
-  //技术文档
-  indexclickButton4: function () {
-    wx.navigateTo({
-      url: '/pages/index4/index4'
-    })
-  },
-  //分享和转发
-  indexclickButton5: function () {
-    wx.navigateTo({
-      url: '/pages/index5/index5'
-    })
-  },
-  //赞助开发者
+
+  //关于/帮助
   indexclickButton6: function () {
+    //wx.clearStorage();
     wx.navigateTo({
       url: '/pages/index6/index6'
     })
@@ -63,16 +102,16 @@ Page({
   //授权情况
   indexclickButton7: function () {
     wx.openSetting({
-      success: (res) => { }
+      success: (res) => {}
     })
   },
   //反馈/客服
   indexclickButton8: function () {
-   
+
   },
 
   //查看缓存占用空间大小
-  indexclickButton2:function(res){
+  indexclickButton2: function (res) {
     wx.getStorageInfo({
       success: function (res) {
         wx.showToast({
@@ -103,8 +142,12 @@ Page({
     }
   },
 
-  onLoad: function() {
+  onLoad: function () {
     this.onShareAppMessage();
-  },
+    var temp=wx.getStorageSync('message')
+    this.setData({
+      message: temp
+    })
+  }
 
 })

@@ -1,1 +1,58 @@
 /**index.wxss**/
+
+.btn1 {
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 0%;
+}
+
+.btn2 {
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 50%;
+}
+
+.btn3 {
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 65px;
+  margin-left: 0%;
+}
+.btn6 {
+  text-align: left;
+  height: 50px;
+  width: 50%;
+  position: fixed;
+  margin-top: 65px;
+  margin-left: 50%;
+}
+
+.btn7 {
+  text-align: left;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 125px;
+  margin-left: 0%;
+}
+
+.btn8 {
+  text-align: left;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 185px;
+  margin-left: 0%;
+}
+.message{
+  position: fixed;
+  margin-top:245px
+}

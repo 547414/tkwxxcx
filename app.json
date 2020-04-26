@@ -1,27 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/jds/jds",
-    "pages/mg/mg",
-    "pages/sx/sx",
-    "pages/my/my",
-    "pages/jds1/jds1",
-    "pages/jds2/jds2",
-    "pages/jds4/jds4",
-    "pages/mg1/mg1",
-    "pages/mg2/mg2",
-    "pages/mg4/mg4",
-    "pages/my1/my1",
-    "pages/my2/my2",
-    "pages/my4/my4",
-    "pages/sx1/sx1",
-    "pages/sx2/sx2",
-    "pages/sx4/sx4",
-    "pages/index2/index2",
-    "pages/index3/index3",
-    "pages/index4/index4",
-    "pages/index5/index5",
-    "pages/index6/index6"
+    "pages/index6/index6",
+    "pages/zds/zds",
+    "pages/zzs/zzs",
+    "pages/xqy/xqy",
+    "pages/jmsz/jmsz"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,8 +14,9 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#bfbfbf",
+    "color": "white",
     "selectedColor": "#d81e06",
+    "backgroundColor": "#87CEEB",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -40,16 +25,16 @@
         "selectedIconPath": "images/sm2.png"
       },
       {
-        "pagePath": "pages/sx/sx",
-        "text": "思修",
-        "iconPath": "images/sx1.png",
-        "selectedIconPath": "images/sx2.png"
+        "pagePath": "pages/zds/zds",
+        "text": "自带题库",
+        "iconPath": "images/mg1.png",
+        "selectedIconPath": "images/mg2.png"
       },
       {
-        "pagePath": "pages/my/my",
-        "text": "马列",
-        "iconPath": "images/my1.png",
-        "selectedIconPath": "images/my2.png"
+        "pagePath": "pages/zzs/zzs",
+        "text": "导入题库",
+        "iconPath": "images/sx1.png",
+        "selectedIconPath": "images/sx2.png"
       }
     ]
   },

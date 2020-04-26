@@ -1,21 +1,62 @@
 <!--pages/index6/index6.wxml-->
-<view>---------- </view>
-<view>个人网站：没钱买服务器啊！！</view>
-<view>---------- </view>
+<!--pages/index3/index3.wxml-->
+
+<view class="hr"></view>
+<view>版本：4.0.0.1001</view>
+<view class="hr"></view>
+<view class="img">关于小程序</view>
+<view class="hr"></view>
+<view class="img">
+  <image class="image_frame" src="/images/sm.png" style='width:300px;height:300px'>
+  </image>
+</view>
+<view class="img">菜单栏对应的功能</view>
+<view class="hr"></view>
+<view class="img">按钮/菜单栏作用说明</view>
+<view class="hr"></view>
+<text>跳转：</text>
+<view>
+  <text selectable="true">跳转至指定题目(当前号)。</text>
+</view>
+<view class="hr"></view>
+<text>加入错题库：</text>
+<view>
+  <text selectable="true">将题目增加至错题库。</text>
+</view>
+<view class="hr"></view>
+<text>清空：</text>
+<view>
+  <text selectable="true">清空错题库。</text>
+</view>
+<view class="hr"></view>
+<text>打散：</text>
+<view>
+  <text selectable="true">将题目顺序打乱。</text>
+</view>
+<view class="hr"></view>
+<text>重置：</text>
+<view>
+  <text selectable="true">并不会删除题目，只会初始化页面。</text>
+</view>
+<view class="hr"></view>
+<view class="img">关于开发者</view>
+<view class="hr"></view>
+<view>个人网站：<text selectable="true" style='word-break: keep-all;word-wrap: break-word;color:#FFA500;'>crysu.com</text></view>
+<view class="hr"></view>
 <view>开发者 邮箱(长按复制)：</view>
 <text selectable="true" style='word-break: keep-all;word-wrap: break-word;color:#FFA500;'>zbshr@foxmail.com</text>
-<view>---------- </view>
+<view class="hr"></view>
 <view>赞助开发者(长按保存二维码) </view>
-<view>---------- </view>
-<view>微信支付</view>
+<view class="hr"></view>
 <view class="img" catchlongpress='baocunwx'>
   <image class="image_frame" src="/images/wx.png" style='width:100px;height:100px'>
   </image>
 </view>
-<view>---------- </view>
-<view>支付宝 </view>
+<view class="img">微信支付</view>
+<view class="hr"></view>
 <view class="img" catchlongpress='baocunzfb'>
   <image class="image_frame" src="/images/zfb.png" style='width:100px;height:100px'>
   </image>
 </view>
-<view>---------- </view>
+<view class="img">支付宝 </view>
+<view class="hr"></view>

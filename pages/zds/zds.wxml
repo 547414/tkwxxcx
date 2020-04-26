@@ -1,0 +1,74 @@
+<!--pages/zds/zds.wxml-->
+<view>
+	<view class='zds_btn_jds_sx'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_jds_sx">近代史-顺序
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_sx_sx'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_sx_sx">思修-顺序
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_my_sx' >
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_my_sx">马原-顺序
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_mg_sx'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_mg_sx">毛概-顺序
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_jds_sj'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_jds_sj">近代史-随机
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_sx_sj'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_sx_sj">思修-随机
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_my_sj'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_my_sj">马原-随机
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_mg_sj'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_mg_sj">毛概-随机
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_jds_ctk'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_jds_ctk">近代史-错题库
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_sx_ctk'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_sx_ctk">思修-错题库
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_my_ctk'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_my_ctk">马原-错题库
+			<image src='/images/jty.png' class='zds_arr_left'></image>
+		</button>
+	</view>
+
+	<view class='zds_btn_mg_ctk'>
+		<button class="btn" hover-class="zds_btn_hover" bindtap="btn_mg_ctk">毛概-错题库
+			<image src='/images/jty.png' class='zds_arr_right'></image>
+		</button>
+	</view>
+</view>

@@ -1,4 +1,52 @@
 /**app.wxss**/
-page{
+
+page {
   font-size: 120%;
+  background-color: rgb(242, 235, 235);
+}
+
+.btnArrow1 {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  margin-top: 17px;
+  right: 0%;
+}
+
+.btnArrow2 {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  margin-top: 17px;
+  right: 0%;
+}
+
+.btnArrow3 {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  margin-top: 17px;
+  right: 0%;
+}
+
+.btnbj {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  margin-top: 17px;
+  right: 0%;
+}
+
+.btnbj2 {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  margin-top: 17px;
+  left: 45%;
+}
+
+.anniu-hover {
+  background-color: #87ceeb;
+  color: black;
+  opacity: 1.0;
 }
