@@ -14,3 +14,9 @@
 导入自定义题库网页源码，链接：https://pan.baidu.com/s/1d9v_58awrf-rBOM9OiOtZg 
 
 提取码：nqjl
+
+云数据库
+![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/云数据库.png)
+
+云存储
+![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/云存储.png)
