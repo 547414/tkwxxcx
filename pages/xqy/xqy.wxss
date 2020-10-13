@@ -4,6 +4,7 @@ page {
   width: 100%;
   /*页面滚动*/
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .main {

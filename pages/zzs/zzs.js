@@ -14,6 +14,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: '自定义题库'
+    });
     var that=this
     wx.getStorage({
       key: 'd_zdy',
@@ -87,6 +90,27 @@ Page({
                     success: function (res) {
                       if (res.confirm) {
                         wx.setStorageSync('d_zdy', test)
+                        wx.setStorageSync('flag_zdy_sx', "true")
+                        wx.setStorageSync('flag_zdy_sj', "true")
+                        wx.setStorageSync('flag_zdy_ctk', "true")
+                        wx.removeStorage({
+                          key: "zdy_sj_point",
+                          success:function(){
+
+                          },
+                          fail:function(){
+
+                          }
+                        })
+                        wx.removeStorage({
+                          key: "zdy_ctk_point",
+                          success:function(){
+
+                          },
+                          fail:function(){
+
+                          }
+                        })
                         that.setData({
                           disabl_ed: false
                         })

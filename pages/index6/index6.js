@@ -1,4 +1,5 @@
 // pages/index6/index6.js
+const app=getApp()
 Page({
 
   /**
@@ -122,10 +123,34 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '关于开发者'
+      title: '关于/帮助'
     });
   },
+  xf:function(e){
+    var that = this;
+    wx.showModal({
+      title: '提示',
+      content: '确定吗(此操作会删除所有缓存)？',
+      success: function (res) {
+        if (res.confirm) { //用户点击确定 
+          wx.clearStorageSync()
+          app.onLaunch()
+          wx.showToast({
+            title: '修复完毕！',
+            icon: 'none',
+            duration: 1500 //持续的时间
+          })
+        }else{
+          wx.showToast({
+            title: '已取消！',
+            icon: 'none',
+            duration: 1500 //持续的时间
+          })
+        }
+      }
+    })
 
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,5 +1,5 @@
 <!--pages/xqy/xqy.wxml-->
-<view style="overflow: scroll;height:100%">
+<view style="overflow: scroll;height:100%;-webkit-overflow-scrolling: touch">
 	<view class="main" bindtouchstart='touchStart' bindtouchend="touchEnd">
 		<view class="xqy_dbcd">
 			<view>

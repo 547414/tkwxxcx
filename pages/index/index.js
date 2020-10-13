@@ -125,7 +125,7 @@ Page({
 
   onShareAppMessage: function (res) {
     return {
-      title: '浙海大东科题库',
+      title: '小窝刷题',
       path: '/pages/index/index',
       imageUrl: '/images/zhddktk.png',
       success: function (shareTickets) {
@@ -141,13 +141,18 @@ Page({
       }
     }
   },
-
-  onLoad: function () {
-    this.onShareAppMessage();
+  msg_shouw:function(){//首页消息显示
     var temp=wx.getStorageSync('message')
     this.setData({
       message: temp
     })
+  },
+  onLoad: function () {
+    wx.setNavigationBarTitle({
+      title: '小窝刷题'
+    });
+    this.onShareAppMessage();
+    setTimeout(this.msg_shouw,500)
+    //延迟500ms显示，因为先加载index的onload,再加载app.js的，会导致数据同步滞后，坑爹，我擦，气死了
   }
-
 })

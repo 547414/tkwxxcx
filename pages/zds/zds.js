@@ -13,7 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: '自带题库'
+    });
   },
   btn_jds_sx:function(e){//近代史-顺序
     app.globalData.name="jds"
