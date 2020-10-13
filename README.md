@@ -11,27 +11,27 @@
 
 提取码：nqjl
 
-小程序端配置步骤  
-1.下载本项目（master）  
-2.删除master中的 服务器网页端 文件夹  
-3.将项目（master）导入到 微信开发者工具  
-4.在`projiect.config.json`修改`appid`为你自己的  
-5.在`app.js`里找到最上面几行，将云环境`id`（`env`那里）改成你自己的  
-6.打开云开发，分别配置云数据库和云存储，参考下图  
+##小程序端配置步骤  
+###1.下载本项目（master）  
+###2.删除master中的 服务器网页端 文件夹  
+###3.将项目（master）导入到 微信开发者工具  
+###4.在`projiect.config.json`修改`appid`为你自己的  
+###5.在`app.js`里找到最上面几行，将云环境`id`（`env`那里）改成你自己的  
+###6.打开云开发，分别配置云数据库和云存储，参考下图  
   
-云数据库
+####云数据库
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/2.png)
   
-云存储
+####云存储
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/1.png)
   
-7.在`app.js`里按Ctrl+F调出搜索框搜索  
+###7.在`app.js`里按Ctrl+F调出搜索框搜索  
 `db.collection('message').doc("6b81e0b4-e39f-47a1-bc7c-b604ffb2914e").get().then(res => {`  
 然后将doc("`6b81e0b4-e39f-47a1-bc7c-b604ffb2914e`")中双引号引起开的换成你自己配置的  
   
-8.将云环境中的 云数据库 中的 file_id 改成 云存储你上传的文件的File ID  
+###8.将云环境中的 云数据库 中的 file_id 改成 云存储你上传的文件的File ID  
   
-9.云数据库数据项说明：  
+###9.云数据库数据项说明：  
 `字段`------------`示例值`---------`说明`  
 `file_id`---------`cloud://...`----`自带题库文件（上传到云存储的文件）的文件ID`  
 `message`---------`欢迎使用`-------`小程序首页中间偏下面显示的消息（更改后重新加载首页（或重启小程序）即可刷新）`  
