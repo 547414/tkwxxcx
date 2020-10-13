@@ -11,8 +11,8 @@
 
 提取码：nqjl
 
-小程序端配置步骤
-1.下载本项目（master）
+小程序端配置步骤\n
+1.下载本项目（master）\n
 2.删除master中的 服务器网页端 文件夹
 3.将项目（master）导入到 微信开发者工具
 4.在projiect.config.json修改appid为你自己的
