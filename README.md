@@ -16,7 +16,7 @@
 提取码：nqjl
 
 云数据库
-![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/云数据库.png)
+![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/2.png)
 
 云存储
-![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/云存储.png)
+![Image text](https://github.com/547414/tkwxxcx/blob/master/remade/1.png)
