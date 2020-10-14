@@ -1,9 +1,16 @@
 # 题库微信小程序
 注：切勿将 `服务器网页端` 文件夹放入 `微信开发者工具`，使用的时候注意分开，除了这个文件夹，其他的都可以放入`微信开发者工具`
 
-哔哩哔哩教程：https://www.bilibili.com/video/BV1zf4y1S7oF
+### 哔哩哔哩教程
+新版本（本项目）：https://www.bilibili.com/video/BV1zf4y1S7oF
+老版本：https://www.bilibili.com/video/BV1fb411a71B
 
-导入自定义题库网址：https://crysu.com/zhddktk/
+### 老版本项目文件
+链接：https://pan.baidu.com/s/1Ln2ZXEURC52DPiCWsscLAA 提取码：`501q`  
+
+### 导入自定义题库网址
+https://crysu.com/zhddktk/
+
 ### 有问题可以联系我，QQ: `2686885195` 邮箱：`crysu@crysu.com`或`zbshr@foxmail.com`
 ## 微信扫码打开小程序可进行体验
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/zhddktk.jpg)
