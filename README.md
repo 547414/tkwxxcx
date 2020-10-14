@@ -7,10 +7,6 @@
 
 导入自定义题库网址：https://crysu.com/zhddktk/
 
-导入自定义题库网页源码，链接：https://pan.baidu.com/s/1d9v_58awrf-rBOM9OiOtZg 
-
-`提取码`：nqjl
-
 ## 小程序端配置步骤
 ### 1.下载本项目`（master）`  
 ### 2.删除`master`中的 `服务器网页端` 文件夹  
