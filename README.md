@@ -1,11 +1,12 @@
 # 题库微信小程序
 注：切勿将 `服务器网页端` 文件夹放入 `微信开发者工具`，使用的时候注意分开，除了这个文件夹，其他的都可以放入`微信开发者工具`
 
-微信题库小程序升级版
-
 哔哩哔哩教程：https://www.bilibili.com/video/BV1zf4y1S7oF
 
 导入自定义题库网址：https://crysu.com/zhddktk/
+
+## 微信扫码打开小程序可进行体验
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/zhddktk.jpg)
 
 ## 小程序端配置步骤
 ### 1.下载本项目`（master）`  
