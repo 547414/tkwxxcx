@@ -133,8 +133,17 @@ Page({
       content: '确定吗(此操作会删除所有缓存)？',
       success: function (res) {
         if (res.confirm) { //用户点击确定 
+          wx.showLoading({
+            title: '修复中···',
+            mask: true,
+            icon: 'loading',
+            duration: 10000
+          });
           wx.clearStorageSync()
           app.onLaunch()
+          complete: () => {
+            wx.hideLoading()
+          }
           wx.showToast({
             title: '修复完毕！',
             icon: 'none',

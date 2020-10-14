@@ -341,6 +341,12 @@ Page({
         cancelText: '取消',
         success: function (res) {
           if (res.confirm) {
+            wx.showLoading({
+              title: '清空中···',
+              mask: true,
+              icon: 'loading',
+              duration: 10000
+            });
             that.cz()
             wx.removeStorage({
               key: app.globalData.name + "_" + name_type + "_point",
@@ -351,6 +357,9 @@ Page({
             pos = null
             pos_prev = null
             pos_next = null
+            complete: () => {
+              wx.hideLoading()
+            }
             wx.showToast({
               title: '清空成功！',
               icon: 'none',
@@ -390,11 +399,17 @@ Page({
       var that = this
       wx.showModal({
         title: title_text,
-        content: '确认重置？(1千道约4到10秒,请提示成功后再进行其它操作)。如果进行了覆盖操作，请点重置！',
+        content: '确认重置？如果系统自动弹出此页面，请点重置！',
         confirmText: '重置',
         cancelText: '取消',
         success: function (res) {
           if (res.confirm) {
+            wx.showLoading({
+              title: '重置中···',
+              mask: true,
+              icon: 'loading',
+              duration: 10000
+            });
             for (var i = 1; i <= app.globalData.total_num; i++) {
               wx.removeStorage({
                 key: app.globalData.name + "_" + name_type + "_dapd[" + i + "]", //删除每题的答案核对判断
@@ -409,6 +424,9 @@ Page({
             wx.removeStorage({
               key: app.globalData.name + "_" + name_type + "_ddl", //删除答对量
             })
+            complete: () => {
+              wx.hideLoading()
+            }
             wx.showToast({
               title: '重置成功！',
               icon: 'success',

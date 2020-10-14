@@ -1,5 +1,5 @@
 // pages/zzs/zzs.js
-const app=getApp()
+const app = getApp()
 var id
 Page({
 
@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    disabl_ed: false//改成false就成了，要不然重启小程序会导致导入题库界面前三个按钮不能用
+    disabl_ed: false //改成false就成了，要不然重启小程序会导致导入题库界面前三个按钮不能用
   },
 
   /**
@@ -17,33 +17,33 @@ Page({
     wx.setNavigationBarTitle({
       title: '自定义题库'
     });
-    var that=this
+    var that = this
     wx.getStorage({
       key: 'd_zdy',
-      fail:function(){
+      fail: function () {
         that.setData({
           disabl_ed: true
         })
       }
     })
   },
-  btn_zdy_sx:function(){//自定义-顺序
-    app.globalData.name="zdy"
-    app.globalData.name_type="sx"
+  btn_zdy_sx: function () { //自定义-顺序
+    app.globalData.name = "zdy"
+    app.globalData.name_type = "sx"
     wx.navigateTo({
       url: '/pages/xqy/xqy'
     })
   },
-  btn_zdy_sj:function(){//自定义-随机
-    app.globalData.name="zdy"
-    app.globalData.name_type="sj"
+  btn_zdy_sj: function () { //自定义-随机
+    app.globalData.name = "zdy"
+    app.globalData.name_type = "sj"
     wx.navigateTo({
       url: '/pages/xqy/xqy'
     })
   },
-  btn_zdy_ctk:function(){//自定义-错题库
-    app.globalData.name="zdy"
-    app.globalData.name_type="ctk"
+  btn_zdy_ctk: function () { //自定义-错题库
+    app.globalData.name = "zdy"
+    app.globalData.name_type = "ctk"
     wx.navigateTo({
       url: '/pages/xqy/xqy'
     })
@@ -52,7 +52,7 @@ Page({
     id = e.detail.value
   },
   btn_zdy_dr: function (e) {
-    var that=this
+    var that = this
     wx.getSavedFileList({
       success: savedFileInfo => { //清空之前的下载文件
         let list = savedFileInfo.fileList
@@ -63,6 +63,12 @@ Page({
         }
       }
     })
+    wx.showLoading({
+      title: '数据加载中···',
+      mask: true,
+      icon: 'loading',
+      duration: 10000
+    });
     wx.downloadFile({
       url: "https://crysu.com/zhddktk/upload/" + id + ".txt",
       success: function (res) {
@@ -70,11 +76,14 @@ Page({
           filePath: res.tempFilePath,
           encoding: 'utf8',
           success(res2) {
+            complete: () => {
+              wx.hideLoading()
+            }
             var test = res2.data
             var temp = test.split("\n")
-            if (temp[1] === "<!--") {//如果导入ID不正确，会返回404页面的代码
+            if (temp[1] === "<!--") { //如果导入ID不正确，会返回404页面的代码
               wx.showToast({
-                title: '导入失败，请检查导入ID是否正确！',
+                title: '数据获取失败，请检查导入ID是否正确！',
                 icon: 'none',
                 duration: 3000 //持续的时间
               })
@@ -82,6 +91,11 @@ Page({
               wx.getStorage({
                 key: 'd_zdy',
                 success: function () {
+                  wx.showToast({
+                    title: '数据获取成功！',
+                    icon: 'none',
+                    duration: 500
+                  })
                   wx.showModal({
                     title: '提示',
                     content: '检测到已有导入数据，是否覆盖？',
@@ -95,24 +109,29 @@ Page({
                         wx.setStorageSync('flag_zdy_ctk', "true")
                         wx.removeStorage({
                           key: "zdy_sj_point",
-                          success:function(){
+                          success: function () {
 
                           },
-                          fail:function(){
+                          fail: function () {
 
                           }
                         })
                         wx.removeStorage({
                           key: "zdy_ctk_point",
-                          success:function(){
+                          success: function () {
 
                           },
-                          fail:function(){
+                          fail: function () {
 
                           }
                         })
                         that.setData({
                           disabl_ed: false
+                        })
+                        wx.showToast({
+                          title: '数据获取成功！',
+                          icon: 'none',
+                          duration: 500
                         })
                         wx.showToast({
                           title: '导入成功！',
@@ -143,11 +162,19 @@ Page({
               })
             }
           },
+          fail: function () {
+            complete: () => {
+              wx.hideLoading()
+            }
+          }
         })
       },
       fail: function (err) {
+        complete: () => {
+          wx.hideLoading()
+        }
         wx.showToast({
-          title: '导入失败，请检查导入ID是否正确！',
+          title: '服务器错误，请联系开发者！',
           icon: 'none',
           duration: 1500 //持续的时间
         })
