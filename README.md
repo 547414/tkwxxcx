@@ -4,7 +4,7 @@
 哔哩哔哩教程：https://www.bilibili.com/video/BV1zf4y1S7oF
 
 导入自定义题库网址：https://crysu.com/zhddktk/
-### 有问题可以联系我，QQ: 2686885195 邮箱：crysu@crysu.com或zbshr@foxmail.com
+### 有问题可以联系我，QQ: `2686885195` 邮箱：`crysu@crysu.com`或`zbshr@foxmail.com`
 ## 微信扫码打开小程序可进行体验
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/zhddktk.jpg)
 
