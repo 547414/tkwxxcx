@@ -96,7 +96,7 @@ c
 使用 `/%*/` 分割四个题库，默认顺序是近代史、思修、马原、毛概  
 必须有四个题库，也就是四个分隔符，即使是每个题库里只有一道题，如果多了用不到，可以改`zds.wxml`把多余的题库进口按钮删了  
 #### 自带题库示例文件：https://github.com/547414/tkwxxcx/readme/data2.txt  
-### 关于遇到的问题
+## 关于遇到的问题
 #### 1.自带题库题目加载不出来
     在题库文件（data.txt）没问题的情况下，尝试修改 `数据库的权限`  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/3.png)
