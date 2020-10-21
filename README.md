@@ -63,5 +63,9 @@ QQ: `2686885195`
 将服务器网页端文件夹改成英文名放入你的服务器中，并配置好`php+nigix/apache`环境即可  
 在小程序后台`（微信公众平台）配置域名（需要ICP备案）`  
 
+### 关于遇到的问题
+## 1.自带题库题目加载不出来
+    在题库文件（data.txt）没问题的情况下，尝试修改 `数据库的权限`  
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/3.png)
 
 
