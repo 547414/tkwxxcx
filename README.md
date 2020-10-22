@@ -19,6 +19,7 @@
 * [十一、关于遇到的问题](#十一关于遇到的问题)
 * * [1.自带题库题目加载不出来](#1自带题库题目加载不出来)
 * * [2.换行符问题](#2换行符问题)
+* * [3.如何去除导入题库模块](3如何去除导入题库模块)
 ****
 
 ## 声明
@@ -130,4 +131,7 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 换行符是隐匿的，一般看不到的。可使用`notepad++`，勾选 `视图`-`显示符号`-`显示所有字符` 然后查看换行符是否如图所示。  
 如果不是，则可以将其复制进excel里，再复制出来。  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/4.png)
+#### 3.如何去除导入题库模块
+在`app.json`里删除如图高亮选中部分  
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/5.png)
 ****
