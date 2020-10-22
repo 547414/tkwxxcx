@@ -51,9 +51,9 @@ QQ: `2686885195`
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/zhddktk.jpg)
 ****
 ## 六、小程序端配置步骤
-### 1.下载本项目`（master）`  
-### 2.删除`master`中的 `服务器网页端` 文件夹和`remade`文件夹  
-### 3.将项目`（master）`导入到 `微信开发者工具`  
+### 1.点击本页面绿色的`code`按钮，然后点`Download ZIP`下载本项目`（tkwxxcx-master）`  
+### 2.解压后得到`tkwxxcx-master`文件夹，删除其中的 `服务器网页端` 文件夹和`remade`文件夹  
+### 3.将项目`（tkwxxcx-master）`导入到 `微信开发者工具`  
 ### 4.在`projiect.config.json`修改`appid`为你自己的  
 ### 5.在`app.js`里找到最上面几行，将云环境`id`（`env`那里）改成你自己的  
 ### 6.打开`云开发`，分别配置`云数据库`和`云存储`，参考下图  
