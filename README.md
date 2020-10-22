@@ -18,6 +18,7 @@
 * * [自带题库示例文件](#自带题库示例文件)
 * [十一、关于遇到的问题](#十一关于遇到的问题)
 * * [1.自带题库题目加载不出来](#1自带题库题目加载不出来)
+* * [2.换行符问题](#2换行符问题)
 ****
 
 ## 声明
@@ -124,5 +125,9 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 #### 1.自带题库题目加载不出来
 在题库文件（data.txt）没问题的情况下，尝试修改 `数据库的权限`  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/3.png)
-
+#### 2.换行符问题
+使用WPS编辑的话有可能导致换行符不标准的问题。
+换行符是隐匿的，一般看不到的。可使用`notepad++`，勾选 `视图`-`显示符号`-`显示所有字符` 然后查看换行符是否如图所示。  
+如果不是，则可以将其复制进excel里，再复制出来。  
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/4.png)
 ****
