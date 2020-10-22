@@ -20,6 +20,7 @@
 * * [1.自带题库题目加载不出来](#1自带题库题目加载不出来)
 * * [2.换行符问题](#2换行符问题)
 * * [3.如何去除导入题库模块](#3如何去除导入题库模块)
+* * [4.如何删除广告位](#4如何删除广告位)
 ****
 
 ## 声明
@@ -134,4 +135,7 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 #### 3.如何去除导入题库模块
 在`app.json`里删除如图高亮选中部分  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/5.png)
+#### 4.如何删除广告位 
+因为小程序增加广告位是有用户数量要求的，如果你要上线，要删除项目里的广告位（在`index.wxml`里），如果满足了要求，想要增加广告位，也请修改图中的内容。  
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/6.png)
 ****
