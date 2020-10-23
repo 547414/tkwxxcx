@@ -18,97 +18,187 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	<style>
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            -webkit-transition-duration: 0.4s; /* Safari */
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-        
-        .button1 {
-            background-color: white; 
-            color: black; 
-            border: 2px solid #4CAF50;
-        	margin-top: 10px;
-        }
-        .button2 {
-            background-color: white; 
-            color: black; 
-            border: 2px solid #008CBA;
-        	margin-top:10px;
-        }
-        .button1:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .button2:hover {
-            background-color: #008CBA;
-            color: white;
-        }
-        
-        .card {
-            width: 50vw;
-            height: 250px;
-        	text-align:center;
-        }
-        
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
-        .card2 {
-            width: 50%;
-        	position: absolute;
-        	text-align:center;
-        	left:25vw;
-        	margin-top: 50px;
-        }
-        
-        .card2:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
-        .card3 {
-            width: 50%;
-        	position: absolute;
-        	text-align:center;
-        	left:25vw;
-        	margin-top: 150px;
-        }
-        
-        .card3:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
-        .card4 {
-        	position:fixed;
-        	width:160px;
-        	top:0px;
-        	left:0px;
-        	text-align:center;
-        	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        .card4:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-        }
-        .ba{
-        	width:100%
-        	height:100%
-        	background-color: gray;
-        	opacity: 0.5; 
-        }
-        </style>
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			-webkit-transition-duration: 0.4s;
+			/* Safari */
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button1 {
+			background-color: white;
+			color: black;
+			border: 2px solid #4CAF50;
+			margin-top: 10px;
+		}
+
+		.button2 {
+			background-color: white;
+			color: black;
+			border: 2px solid #008CBA;
+			margin-top: 10px;
+		}
+
+		.button1:hover {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.button2:hover {
+			background-color: #008CBA;
+			color: white;
+		}
+
+		.card {
+			width: 50vw;
+			height: 260px;
+			text-align: center;
+		}
+
+		.card:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card2 {
+			width: 50%;
+			position: absolute;
+			text-align: center;
+			left: 25vw;
+			margin-top: 160px;
+		}
+
+		.card2:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card3 {
+			width: 50%;
+			position: absolute;
+			text-align: center;
+			left: 25vw;
+			margin-top: 260px;
+		}
+
+		.card3:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card4 {
+			position: fixed;
+			width: 160px;
+			top: 0px;
+			left: 0px;
+			text-align: center;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card4:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+		}
+
+
+		.card5 {
+
+			position: absolute;
+			text-align: center;
+			left: 40vw;
+			margin-top: 100px;
+		}
+
+		.card5:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card6 {
+			width: 26vw;
+			height: 25px;
+			text-align: center;
+			position: absolute;
+			left: 37vw;
+			margin-top: 100px;
+		}
+
+		.card6:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.card7 {
+			width: 26vw;
+			height: 25px;
+			text-align: center;
+			position: absolute;
+			left: 37vw;
+			margin-top: 130px;
+		}
+
+		.card7:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+
+		.ba {
+			width: 100% height:100% background-color: gray;
+			opacity: 0.5;
+		}
+
+
+		.code {
+			font-family: Arial;
+			font-style: italic;
+			color: blue;
+			font-size: 30px;
+			border: 0;
+			padding: 2px 3px;
+			letter-spacing: 3px;
+			font-weight: bolder;
+			float: left;
+			cursor: pointer;
+			width: 26vw;
+			height: 50px;
+			line-height: 60px;
+			text-align: center;
+			vertical-align: middle;
+			background-color: #D8B7E3;
+
+
+			position: absolute;
+			left: 37vw;
+			margin-top: 30px;
+		}
+
+		.code:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		span {
+			text-decoration: none;
+			font-size: 12px;
+			color: #288bc4;
+			padding-left: 10px;
+		}
+
+		span:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	</style>
 </head>
 
 <body class="demo-1">
+
+
+
+
 	<div class="image-preload">
 		<img src="img/drop-color.png" alt="">
 		<img src="img/drop-alpha.png" alt="">
@@ -125,86 +215,187 @@
 		<header class="codrops-header">
 			<div>
 
-                <div>
-				<form action="upload_file.php" method="post" enctype="multipart/form-data" onSubmit="return checkTxt() " target="id_iframe">
-					<div class="card2">
-						<input type="file" name="file" id="myfile" />
+
+
+				<div>
+					<div>
+						<div id="checkCode" class="code" onclick="createCode(4)"></div>
+						<input type="text" id="inputCode" class="card6" />
+						<div class="card7">请输入验证码</div>
+
 					</div>
-					<br />
-					<div class="card2">
-						<input class="button button2" type="submit" value="提交" name="submit">
-					</div>
-				</form>
+				</div>
+
+
+
+
+
+				<div>
+					<form action="upload_file.php" method="post" enctype="multipart/form-data" onSubmit="return checkValidateCode() " target="id_iframe">
+						<div class="card2">
+							<input type="file" name="file" id="myfile" />
+						</div>
+						<br />
+						<div class="card2">
+							<input class="button button2" type="submit" value="提交" name="submit">
+						</div>
+					</form>
 				</div>
 				<div class="card3">
-				    <iframe class="card" frameborder="no" id="id_iframe" name="id_iframe"></iframe>
+					<iframe class="card" frameborder="no" id="id_iframe" name="id_iframe"></iframe>
 				</div>
 				<div class="card4">
-    				<a href="https://crysu.com/zhddktk/img/help.mp4">
-                		<font size="5" face="arial" color="#DC143C">帮助</font>
-                	</a>
-                	<a>
-                		<font size="5" face="arial" color="#F4A460">|</font>
-                	</a>
-                	<a href="https://crysu.com/zhddktk/img/《马克思主义基本原理》机考题库---20190401.xls">
-                		<font size="5" face="arial" color="#228B22">示例文档</font>
-                	</a>
-            	</div>
+					<a href="https://crysu.com/zhddktk/img/help.mp4">
+						<font size="5" face="arial" color="#DC143C">帮助</font>
+					</a>
+					<a>
+						<font size="5" face="arial" color="#F4A460">|</font>
+					</a>
+					<a href="https://crysu.com/zhddktk/img/《马克思主义基本原理》机考题库---20190401.xls">
+						<font size="5" face="arial" color="#228B22">示例文档</font>
+					</a>
+				</div>
 				<br />
 				<br />
 			</div>
-	
 
-            <div style="position:fixed;width:100vw;bottom:0px;left:0px;text-align:center;">
-            	<a href="http://www.beian.miit.gov.cn/">
-            		<font size="4" face="arial" color="#DC143C">浙ICP备19036099号</font>
-            	</a>
-            	<a><font size="4" face="arial" color="#DC143C">|</font></a>
-            	<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33090202000439">
-            		<font size="4" face="arial" color="#DC143C">浙公网安备33090202000439号</font>
-            	</a>
-            	<a><font size="4" face="arial" color="#FFF0F5">|</font></a>
-            	<a><font size="4" face="arial" color="#FFF0F5"> 导入ID当天23时59分59秒前有效 </font></a>
-            	<a href="https://crysu.com/zhddktk/">
-            		<font size="4" face="arial" color="#DC143C"> | © 2018-2020 小窝刷题</font>
-            	</a>
-            	<a href="https://crysu.com/">
-            		<font size="4" face="arial" color="#DC143C"> | © 2019-2020 独酌小窝</font>
-            	</a>
-            </div>
+
+			<div style="position:fixed;width:100vw;bottom:0px;left:0px;text-align:center;">
+				<a href="http://www.beian.miit.gov.cn/">
+					<font size="4" face="arial" color="#DC143C">浙ICP备19036099号</font>
+				</a>
+				<a>
+					<font size="4" face="arial" color="#DC143C">|</font>
+				</a>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33090202000439">
+					<font size="4" face="arial" color="#DC143C">浙公网安备33090202000439号</font>
+				</a>
+				<a>
+					<font size="4" face="arial" color="#FFF0F5">|</font>
+				</a>
+				<a>
+					<font size="4" face="arial" color="#FFF0F5"> 导入ID五分钟内有效 </font>
+				</a>
+				<a href="https://crysu.com/zhddktk/">
+					<font size="4" face="arial" color="#DC143C"> | © 2018-2020 小窝刷题</font>
+				</a>
+				<a href="https://crysu.com/">
+					<font size="4" face="arial" color="#DC143C"> | © 2019-2020 独酌小窝</font>
+				</a>
+			</div>
 
 		</header>
-		
+
 		<div class="slideshow">
 			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
 			<!-- Heavy Rain -->
 
-		
-		
+
+
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
 	</div>
 	<!-- /container -->
 	<script src="js/index.min.js"></script>
 
-    <script>
-    function checkTxt() {
-        var files = document.getElementById("myfile").files[0]
-        if (files.type == "text/plain") {
-            return true;
-        }
-        alert('上传文件类型不支持!')
-        return false;
-    }
-    function show(){
-        $id = document.getElementById("showa");
-        if($id.style.display == 'none'){
-            $id.style.display = 'block';
-        }else{
-            $id.style.display = 'none';
-        }
-    }
-    </script>
+	<script>
+		function checkTxt() {
+			var files = document.getElementById("myfile").files[0]
+
+			var s = document.getElementById('myfile');
+			console.log("dddd: " + files + s.value)
+			if (s.value == "") {
+
+				createCode(4);
+				return false;
+			} else if (files.type == "text/plain") {
+				return true;
+			} else {
+
+			}
+
+			alert('上传文件类型不支持的哟!')
+			createCode(4);
+			return false;
+		}
+
+		function show() {
+			$id = document.getElementById("showa");
+			if ($id.style.display == 'none') {
+				$id.style.display = 'block';
+			} else {
+				$id.style.display = 'none';
+			}
+		}
+
+
+
+		//页面加载时，生成随机验证码
+		window.onload = function() {
+			createCode(4);
+		}
+
+		//生成验证码的方法
+		function createCode(length) {
+			var code = "";
+			var codeLength = parseInt(length); //验证码的长度
+			var checkCode = document.getElementById("checkCode");
+			////所有候选组成验证码的字符，当然也可以用中文的
+			var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+				'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+				'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+			//循环组成验证码的字符串
+			for (var i = 0; i < codeLength; i++) {
+				//获取随机验证码下标
+				var charNum = Math.floor(Math.random() * 62);
+				//组合成指定字符验证码
+				code += codeChars[charNum];
+			}
+			if (checkCode) {
+				//为验证码区域添加样式名
+				checkCode.className = "code";
+				//将生成验证码赋值到显示区
+				checkCode.innerHTML = code;
+			}
+		}
+
+		//检查验证码是否正确
+		function checkValidateCode() {
+			//获取显示区生成的验证码
+			var checkCode = document.getElementById("checkCode").innerHTML;
+			//获取输入的验证码
+			var inputCode = document.getElementById("inputCode").value;
+			console.log(checkCode);
+			console.log(inputCode);
+			if (inputCode.length <= 0) {
+				alert("请输入验证码！");
+				return false;
+			} else if (inputCode.toUpperCase() != checkCode.toUpperCase()) {
+				alert("验证码输入有误！");
+				createCode(4);
+				return false;
+			} else {
+				var files = document.getElementById("myfile").files[0]
+
+				var s = document.getElementById('myfile');
+				console.log("dddd: " + files + s.value)
+				if (s.value == "") {
+					alert('请选择文件哟!')
+					createCode(4);
+					return false;
+				} else if (files.type == "text/plain") {
+				    createCode(4);
+					return true;
+				} else {
+                    createCode(4);
+				}
+
+				alert('上传文件类型不支持的哟!')
+				createCode(4);
+				return false;
+			}
+		}
+	</script>
 </body>
 
 </html>
