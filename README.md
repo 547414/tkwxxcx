@@ -23,6 +23,7 @@
 * * [2.换行符问题](#2换行符问题)
 * * [3.如何去除导入题库模块](#3如何去除导入题库模块)
 * * [4.如何删除广告位](#4如何删除广告位)
+* * [5.导入题库后乱码](#5导入题库后乱码)
 ****
 
 ## 声明
@@ -150,5 +151,8 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/5.png)
 #### 4.如何删除广告位 
 因为小程序增加广告位是有用户数量要求的，如果你要上线，要删除项目里的广告位（在`index.wxml`里），如果满足了要求，想要增加广告位，也请修改图中的内容。  
-![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/6.png)
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/6.png)    
+#### 5.导入题库后乱码
+编码格式问题，改题库文件编码格式为`utf-8`，还不行的话，再改成`ansi`  
+![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/7.png)  
 ****
