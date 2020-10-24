@@ -2,7 +2,7 @@
 <!--pages/index3/index3.wxml-->
 
 <view class="hr"></view>
-<view>版本：4.0.0.1005</view>
+<view>版本：4.0.0.1006</view>
 <view class="hr"></view>
 <view class="hr"></view>
 <button bindtap="xf">点击修复小程序</button>

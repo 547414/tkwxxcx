@@ -22,11 +22,16 @@
 		<button class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_dr">导入自定义题库
 		</button>
 	</view>
-
+	<view class='yanzhengma' bindtap='huanyizhang'>
+		<text class='left'>{{code}}</text>
+		<text class='right'> 换一张</text>
+	</view>
+	<view class="input2">
+		<input type="text" placeholder="请输入验证码" placeholder-style="color: gray" bindinput="dr2"></input>
+	</view>
 	<input class="input" type="number" placeholder="请输入导入ID" placeholder-style="color: gray" bindinput="dr"></input>
 	<text selectable='true' class="text">小程序端不太适合导入题库，
 	请访问https://crysu.com/zhddktk/辅助操作，将获取的导入ID填入上方输入框，点“导入自定义题库”完成导入。
 	</text>
 
 </view>
-
