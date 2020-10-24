@@ -242,6 +242,7 @@
 					</form>
 				</div>
 				<div class="card3">
+				    <p id="p" style="text-align:left"></p>
 					<iframe class="card" frameborder="no" id="id_iframe" name="id_iframe"></iframe>
 				</div>
 				<div class="card4">
@@ -274,7 +275,7 @@
 					<font size="4" face="arial" color="#FFF0F5">|</font>
 				</a>
 				<a>
-					<font size="4" face="arial" color="#FFF0F5"> 导入ID五分钟内有效 </font>
+					<font size="4" face="arial" color="#FFF0F5"> 导入ID当日23点59分前有效 </font>
 				</a>
 				<a href="https://crysu.com/zhddktk/">
 					<font size="4" face="arial" color="#DC143C"> | © 2018-2020 小窝刷题</font>
@@ -384,6 +385,9 @@
 					createCode(4);
 					return false;
 				} else if (files.type == "text/plain") {
+				    var obj = document.getElementById("p");
+                    obj.innerText= "处理中，稍等···"; 
+
 				    createCode(4);
 					return true;
 				} else {
