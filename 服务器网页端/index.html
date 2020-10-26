@@ -2,6 +2,7 @@
 <html lang="en" class="no-js">
 
 <head>
+    <script src="./gVerify.js"></script>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,10 +75,21 @@
 			position: absolute;
 			text-align: center;
 			left: 25vw;
-			margin-top: 160px;
+			top: 130px;
 		}
 
 		.card2:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+		.card2-1 {
+			width: 50%;
+			position: absolute;
+			text-align: center;
+			left: 25vw;
+			top: 160px;
+		}
+
+		.card2-1:hover {
 			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 		}
 
@@ -86,7 +98,7 @@
 			position: absolute;
 			text-align: center;
 			left: 25vw;
-			margin-top: 260px;
+			top: 240px;
 		}
 
 		.card3:hover {
@@ -95,7 +107,7 @@
 
 		.card4 {
 			position: fixed;
-			width: 160px;
+			width: 300px;
 			top: 0px;
 			left: 0px;
 			text-align: center;
@@ -112,7 +124,7 @@
 			position: absolute;
 			text-align: center;
 			left: 40vw;
-			margin-top: 100px;
+			top: 100px;
 		}
 
 		.card5:hover {
@@ -125,7 +137,7 @@
 			text-align: center;
 			position: absolute;
 			left: 37vw;
-			margin-top: 100px;
+			top: 100px;
 		}
 
 		.card6:hover {
@@ -138,7 +150,7 @@
 			text-align: center;
 			position: absolute;
 			left: 37vw;
-			margin-top: 130px;
+			top: 130px;
 		}
 
 		.card7:hover {
@@ -146,58 +158,52 @@
 		}
 
 
+		.card8 {
+			width: 50vw;
+			height: 40px;
+			text-align: center;
+			position: absolute;
+			left: 25vw;
+			top: 50px;
+		}
+
+		.card8:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+
+
 		.ba {
 			width: 100% height:100% background-color: gray;
 			opacity: 0.5;
 		}
-
-
-		.code {
-			font-family: Arial;
-			font-style: italic;
-			color: blue;
-			font-size: 30px;
-			border: 0;
-			padding: 2px 3px;
-			letter-spacing: 3px;
-			font-weight: bolder;
-			float: left;
-			cursor: pointer;
-			width: 26vw;
-			height: 50px;
-			line-height: 60px;
-			text-align: center;
-			vertical-align: middle;
-			background-color: #D8B7E3;
-
-
-			position: absolute;
-			left: 37vw;
-			margin-top: 30px;
-		}
-
-		.code:hover {
-			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-		}
-
-		span {
-			text-decoration: none;
-			font-size: 12px;
-			color: #288bc4;
-			padding-left: 10px;
-		}
-
-		span:hover {
-			text-decoration: underline;
-			cursor: pointer;
-		}
+        
+		/*验证码*/
+        #picyzm {
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            margin: 0 30px;
+        }
+        #verifyCodeDemo {
+            width: 100%;
+            display: flex;
+            margin-top: 200px;
+            justify-content: center;
+        }
+        #btn {
+            margin: 30px auto;
+            background-color: blue;
+            color: #fff;
+            border-radius: 5px;
+            border: 0;
+            width: 100px;
+            height: 40px;
+        }
 	</style>
 </head>
 
 <body class="demo-1">
-
-
-
 
 	<div class="image-preload">
 		<img src="img/drop-color.png" alt="">
@@ -214,20 +220,14 @@
 	<div class="container">
 		<header class="codrops-header">
 			<div>
-
-
-
+                
+                <div id="verifyCodeDemo">
+                    <div class="card8"><p id="picyzm"></p></div>
+                </div>
+                
 				<div>
-					<div>
-						<div id="checkCode" class="code" onclick="createCode(4)"></div>
-						<input type="text" id="inputCode" class="card6" />
-						<div class="card7">请输入验证码</div>
-
-					</div>
+					<input type="text" id="inputCode" class="card6" placeholder="请输入验证码"> />
 				</div>
-
-
-
 
 
 				<div>
@@ -236,8 +236,8 @@
 							<input type="file" name="file" id="myfile" />
 						</div>
 						<br />
-						<div class="card2">
-							<input class="button button2" type="submit" value="提交" name="submit">
+						<div class="card2-1">
+							<input class="button button2" type="submit" value="提交" name="submit" id="btnbtn">
 						</div>
 					</form>
 				</div>
@@ -255,13 +255,19 @@
 					<a href="https://crysu.com/zhddktk/img/《马克思主义基本原理》机考题库---20190401.xls">
 						<font size="5" face="arial" color="#228B22">示例文档</font>
 					</a>
+					<a>
+						<font size="5" face="arial" color="#F4A460">|</font>
+					</a>
+					<a href="https://crysu.com/zhddktk/data.txt">
+						<font size="5" face="arial" color="#228B22">示例文档2</font>
+					</a>
 				</div>
 				<br />
 				<br />
 			</div>
 
 
-			<div style="position:fixed;width:100vw;bottom:0px;left:0px;text-align:center;">
+			<div style="position:fixed;width:100vw;bottom:0px;left:0px;text-align:center;background-color: rgba(150,205,205,0.5)">
 				<a href="http://www.beian.miit.gov.cn/">
 					<font size="4" face="arial" color="#DC143C">浙ICP备19036099号</font>
 				</a>
@@ -283,6 +289,9 @@
 				<a href="https://crysu.com/">
 					<font size="4" face="arial" color="#DC143C"> | © 2019-2020 独酌小窝</font>
 				</a>
+				<a href="https://github.com/547414/tkwxxcx">
+					<font size="4" face="arial" color="#DC143C"> | 开源网址</font>
+				</a>
 			</div>
 
 		</header>
@@ -290,9 +299,6 @@
 		<div class="slideshow">
 			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
 			<!-- Heavy Rain -->
-
-
-
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
 	</div>
@@ -329,76 +335,48 @@
 			}
 		}
 
-
-
-		//页面加载时，生成随机验证码
-		window.onload = function() {
-			createCode(4);
-		}
-
-		//生成验证码的方法
-		function createCode(length) {
-			var code = "";
-			var codeLength = parseInt(length); //验证码的长度
-			var checkCode = document.getElementById("checkCode");
-			////所有候选组成验证码的字符，当然也可以用中文的
-			var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-				'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-				'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			//循环组成验证码的字符串
-			for (var i = 0; i < codeLength; i++) {
-				//获取随机验证码下标
-				var charNum = Math.floor(Math.random() * 62);
-				//组合成指定字符验证码
-				code += codeChars[charNum];
-			}
-			if (checkCode) {
-				//为验证码区域添加样式名
-				checkCode.className = "code";
-				//将生成验证码赋值到显示区
-				checkCode.innerHTML = code;
-			}
-		}
-
+        //初始化验证码
+        var verifyCode = new GVerify({
+            id : "picyzm",
+            type : "blend"
+        });
 		//检查验证码是否正确
 		function checkValidateCode() {
-			//获取显示区生成的验证码
-			var checkCode = document.getElementById("checkCode").innerHTML;
+		    
 			//获取输入的验证码
 			var inputCode = document.getElementById("inputCode").value;
-			console.log(checkCode);
-			console.log(inputCode);
+			
+			var res = verifyCode.validate(inputCode);
 			if (inputCode.length <= 0) {
 				alert("请输入验证码！");
 				return false;
-			} else if (inputCode.toUpperCase() != checkCode.toUpperCase()) {
+			} else if (res==false) {
 				alert("验证码输入有误！");
-				createCode(4);
 				return false;
 			} else {
 				var files = document.getElementById("myfile").files[0]
-
 				var s = document.getElementById('myfile');
 				console.log("dddd: " + files + s.value)
 				if (s.value == "") {
 					alert('请选择文件哟!')
-					createCode(4);
+					verifyCode.refresh();
 					return false;
 				} else if (files.type == "text/plain") {
 				    var obj = document.getElementById("p");
                     obj.innerText= "处理中，稍等···"; 
 
-				    createCode(4);
+				    verifyCode.refresh();
 					return true;
 				} else {
-                    createCode(4);
+                    verifyCode.refresh();
 				}
 
 				alert('上传文件类型不支持的哟!')
-				createCode(4);
+				verifyCode.refresh();
 				return false;
 			}
 		}
+		
 	</script>
 </body>
 
