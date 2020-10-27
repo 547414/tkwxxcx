@@ -1,5 +1,6 @@
 <!--pages/zzs/zzs.wxml-->
 <view>
+
 	<view class='zzs_btn_zdy_sx'>
 		<button disabled="{{disabl_ed}}" class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_sx">自定义-顺序
 			<image src='/images/jty.png' class='zzs_arr_right'></image>
@@ -22,9 +23,12 @@
 		<button class="btn" hover-class="zzs_btn_hover" bindtap="btn_zdy_dr">导入自定义题库
 		</button>
 	</view>
-	<view class='yanzhengma' bindtap='huanyizhang'>
-		<text class='left'>{{code}}</text>
-		<text class='right'> 换一张</text>
+
+	<view hover-class="canvas_text_hover" class="canvas_text" bindtap='crash'>
+		<text>看不清</text>
+	</view>
+	<view class="canvas">
+		<canvas type="2d" id="myCanvas" bindtap='crash'></canvas>
 	</view>
 	<view class="input2">
 		<input type="text" placeholder="请输入验证码" placeholder-style="color: gray" bindinput="dr2"></input>
