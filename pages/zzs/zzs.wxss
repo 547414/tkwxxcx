@@ -96,7 +96,8 @@
 }
 
 .canvas {
-  width: 95px;
+  overflow: hidden;
+  width: 90px;
   height: 35px;
   position: fixed;
   margin-top: 245px;
@@ -111,7 +112,7 @@
   height: 35px;
   position: fixed;
   margin-top: 245px;
-  right: 98px;
+  right: 94px;
   /*圆角*/
   border-radius: 5px;
   /*水平垂直居中*/

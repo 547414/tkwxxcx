@@ -266,6 +266,9 @@ Page({
       .exec((res) => {
         const canvas = res[0].node
         const ctx = canvas.getContext('2d')
+        //清除画布
+        ctx.fillStyle = "rgb(242, 235, 235)";
+        ctx.fillRect(0, 0, 96, 35)
         /**绘制背景色**/
         ctx.fillStyle = that.randomColor(180, 240); //颜色若太深可能导致看不清
         ctx.fillRect(0, 0, that.data.width, that.data.height)
