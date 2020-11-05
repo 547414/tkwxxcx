@@ -51,6 +51,7 @@ https://crysu.com/zhddktk/
 ### 四、有问题可以联系我
 QQ: `2686885195`  
 邮箱：`crysu@crysu.com`或`zbshr@foxmail.com`  
+相关文件下载：https://cloud.crysu.com/题库微信小程序[小窝刷题]  
 ****
 ## 五、微信扫码打开小程序可进行体验
 或者微信搜索`小窝刷题`也可进行体验  
