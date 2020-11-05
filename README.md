@@ -175,3 +175,15 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
   
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/8.png) 
 ****
+## 关于
+个人网站：https://crysu.com/  
+  
+支持一下： 
+  
+微信  
+![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351554.png)
+  
+支付宝  
+![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png)
+  
+****
