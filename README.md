@@ -62,6 +62,7 @@ QQ: `2686885195`
 ## 五、微信扫码打开小程序可进行体验
 或者微信搜索`小窝刷题`也可进行体验  
   
+https://crysu.com/zhddktk/img/zhddktk.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/zhddktk.jpg)
 ****
 ## 六、小程序端配置步骤
@@ -74,10 +75,12 @@ QQ: `2686885195`
   
 #### 云数据库
   
+https://crysu.com/zhddktk/img/2.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/2.png)
   
 #### 云存储
   
+https://crysu.com/zhddktk/img/1.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/1.png)
   
 ### 7.在`app.js`里按`Ctrl+F`调出搜索框搜索  
@@ -165,24 +168,29 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 #### 1.自带题库题目加载不出来
 在题库文件（data.txt）没问题的情况下，尝试修改 `数据库的权限`  
   
+https://crysu.com/zhddktk/img/3.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/3.png)
 #### 2.换行符问题
 使用WPS编辑的话有可能导致换行符不标准的问题。
 换行符是隐匿的，一般看不到的。可使用`notepad++`，勾选 `视图`-`显示符号`-`显示所有字符` 然后查看换行符是否如图所示。  
 如果不是，则可以将其复制进excel里，再复制出来。  
   
+https://crysu.com/zhddktk/img/4.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/4.png)
 #### 3.如何去除导入题库模块
 在`app.json`里删除如图高亮选中部分  
   
+https://crysu.com/zhddktk/img/5.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/5.png)
 #### 4.如何删除广告位 
 因为小程序增加广告位是有用户数量要求的，如果你要上线，要删除项目里的广告位（在`index.wxml`里），如果满足了要求，想要增加广告位，也请修改图中的内容。  
   
+https://crysu.com/zhddktk/img/6.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/6.png)    
 #### 5.导入题库后乱码
 编码格式问题，改题库文件编码格式为`utf-8`，还不行的话，再改成`ansi`  
   
+https://crysu.com/zhddktk/img/7.png  
 ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/7.png)  
 #### 6.如何快速锁定题库文件错误位置
 拿自定义题库举例，当题库文件格式不对时，小程序端导入题库后往往会啥都不显示。  
@@ -203,9 +211,11 @@ https://github.com/547414/tkwxxcx/tree/master/remade/data2.txt
 支持一下： 
   
 微信  
+https://crysu.com/wp-content/uploads/2020/11/2020110505351554.png  
 ![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351554.png)
   
 支付宝  
+(https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png  
 ![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png)
   
 ****
