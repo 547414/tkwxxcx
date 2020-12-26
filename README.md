@@ -226,7 +226,7 @@ https://crysu.com/wp-content/uploads/2020/11/2020110505351554.png
 ![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351554.png)
   
 支付宝  
-(https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png  
+https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png  
   
 ![Image text](https://crysu.com/wp-content/uploads/2020/11/2020110505351635.png)
   
