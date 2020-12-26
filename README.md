@@ -34,7 +34,9 @@
 ### 由于GitHub有时候会被GFW误'墙'，或者种种原因，本页面图片会不显示，可以选择点图片（不显示图片，但文字一定会显示的）进去，然后下载下来看。或者对着本页面空白处，右击，另存为，弹出的窗口下面选择`网页，全部(* htm,* html)`,然后打开下载的html文件可正常观看（头部会有一大串乱乱的排版，不要紧，往下拉，下面正常的）。
 ### 使用本项目上线时请声明：开源项目，来自https://github.com/547414/tkwxxcx
 ### 源码我也没有收费，保留原作者版权也是[MIT协议](https://baike.baidu.com/item/MIT/10772952)所规定的。这也是对作者的一种尊重，让作者有继续开发的动力。
-
+### 以下小程序未遵守MIT协议，好自为之
+#### 1. APPID: wx537da36bbff4fe68 名称：浙海大东科题库 这个人还删我好友，呵呵。
+ ![Image text](https://raw.githubusercontent.com/547414/tkwxxcx/master/remade/cx1.png)  
 ****
 ### 一、哔哩哔哩教程
 新版本（本项目）：https://www.bilibili.com/video/BV1zf4y1S7oF  
