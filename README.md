@@ -154,9 +154,9 @@ acd
 #### 1.自定义题库示例文件
 https://github.com/547414/tkwxxcx/tree/master/remade/data.txt  
 #### 2.题库格式帮助视频
-https://github.com/547414/tkwxxcx/tree/master/服务器网页端/img/help.mp4  
+https://github.com/547414/tkwxxcx/tree/master/服务器网页端/img/help.mp4    
 或：  
-https://crysu.com/zhddktk/img/help.mp4  
+https://cloud.crysu.com/files/tkwxxcx/help.mp4    
 
 #### 3.题库格式Excel示例
 https://github.com/547414/tkwxxcx/tree/master/服务器网页端/img/《马克思主义基本原理》机考题库---20190401.xls
