@@ -50,6 +50,8 @@ https://crysu.com/zhddktk/img/cx1.png
 由于Github国内下载慢，特提供以下下载源(蓝奏云)，包括老版本工程文件  
 https://crysu.lanzous.com/b09rfxhzc
 密码:`7vt9`
+或：   
+https://cloud.crysu.com/file_tkwxxcx.html  
 ****
 ### 三、导入自定义题库网址
 https://crysu.com/zhddktk/
@@ -57,7 +59,7 @@ https://crysu.com/zhddktk/
 ### 四、有问题可以联系我
 QQ: `2686885195`  
 邮箱：`crysu@crysu.com`或`zbshr@foxmail.com`  
-相关文件下载：https://cloud.crysu.com/题库微信小程序[小窝刷题]  
+相关文件下载：https://cloud.crysu.com/file_tkwxxcx.html  
 ****
 ## 五、微信扫码打开小程序可进行体验
 或者微信搜索`小窝刷题`也可进行体验  
