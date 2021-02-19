@@ -49,7 +49,7 @@ https://crysu.com/zhddktk/img/cx1.png
 ## 二、项目工程下载(国内源）
 由于Github国内下载慢，特提供以下下载源(蓝奏云)，包括老版本工程文件  
 https://crysu.lanzous.com/b09rfxhzc
-密码:`7vt9`
+密码:`7vt9`  
 或：   
 https://cloud.crysu.com/file_tkwxxcx.html  
 ****
